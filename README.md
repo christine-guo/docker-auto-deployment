@@ -22,6 +22,7 @@ This codebase automatically deploys a Docker container running a Flask app to Vu
      - (No need to add again, if you're using this script since it's already on our account)
 2.  **Deploy new VM**
      - Please note that startup scripts are only run once (when the VM is first provisioned)
+     - If you want to add this startup script to a VM auto-deployment in terraform, add "script_id" to your vultr_instance resource (you can get the ID from the startup script url)
 3.  **App is now deployed!**
      - To test out this app in particular, run
        ```bash
